@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #282c34;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  #character-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+  }
+  
+  .character-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .character-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .character-card h3 {
+    margin: 0.5em 0;
+  }
+  
+  .character-card p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
