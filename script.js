@@ -9,3 +9,26 @@ async function fetchCharacters() {
     }
   }
   
+  // Función para mostrar los personajes en el DOM
+function displayCharacters(characters) {
+    const container = document.getElementById('character-container');
+    container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos personajes
+  
+    characters.forEach(character => {
+      const characterCard = document.createElement('div');
+      characterCard.classList.add('character-card');
+  
+      characterCard.innerHTML = `
+        <img src="${character.image}" alt="${character.name}">
+        <h3>${character.name}</h3>
+        <p>Estado: ${character.status}</p>
+        <p>Especie: ${character.species}</p>
+      `;
+  
+      container.appendChild(characterCard);
+    });
+  }
+  
+  // Llamamos a la función para obtener los personajes al cargar la página
+  fetchCharacters();
+  
