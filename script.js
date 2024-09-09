@@ -1,4 +1,4 @@
-// Función para obtener los personajes de la API
+
 async function fetchCharacters() {
     try {
       const response = await fetch('https://rickandmortyapi.com/api/character');
@@ -9,10 +9,10 @@ async function fetchCharacters() {
     }
   }
   
-  // Función para mostrar los personajes en el DOM
-function displayCharacters(characters) {
+  
+  function displayCharacters(characters) {
     const container = document.getElementById('character-container');
-    container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos personajes
+    container.innerHTML = ''; 
   
     characters.forEach(character => {
       const characterCard = document.createElement('div');
@@ -29,6 +29,6 @@ function displayCharacters(characters) {
     });
   }
   
-  // Llamamos a la función para obtener los personajes al cargar la página
+ 
   fetchCharacters();
   
