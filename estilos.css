@@ -60,3 +60,19 @@ body {
     font-size: 0.9em;
   }
   
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .character-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
